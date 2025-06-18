@@ -1,0 +1,31 @@
+# Ignora a pasta de dependências
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ambientes
+.env
+.env.*
+
+# Cache e arquivos temporários
+*.tmp
+.cache/
+dist/
+
+# IDEs e editores
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Outras pastas que podem aparecer
+coverage/

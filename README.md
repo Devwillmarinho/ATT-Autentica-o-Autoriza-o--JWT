@@ -25,8 +25,8 @@ Autentica o usuário e retorna um token JWT válido.
 Response:
 
 json
-Copiar
-Editar
+
+
 {
   "token": "seu_token_jwt_aqui"
 }
@@ -36,8 +36,9 @@ Retorna a lista de produtos. Requer token JWT no header Authorization.
 Header:
 
 makefile
-Copiar
-Editar
+
+
+
 Authorization: Bearer <token>
 POST /products
 Adiciona um novo produto (apenas para usuários com papel admin).
@@ -45,14 +46,16 @@ Adiciona um novo produto (apenas para usuários com papel admin).
 Header:
 
 makefile
-Copiar
-Editar
+
+
+
+
 Authorization: Bearer <token>
 Request body:
 
 json
-Copiar
-Editar
+
+
 {
   "name": "Produto X",
   "price": 100
@@ -63,30 +66,32 @@ Remove um produto pelo ID (apenas para usuários com papel admin).
 Header:
 
 makefile
-Copiar
-Editar
+
+
+
+
 Authorization: Bearer <token>
 Rodando localmente
 Clone o repositório
 
 bash
-Copiar
-Editar
+
+
+
 git clone https://github.com/Devwillmarinho/ATT-Autentica-o-Autoriza-o--JWT.git
 cd ATT-Autentica-o-Autoriza-o--JWT
 Instale as dependências
 
 bash
-Copiar
-Editar
+
 npm install
 Crie o arquivo .env na raiz do projeto (veja abaixo).
 
 Rode a aplicação
 
 bash
-Copiar
-Editar
+
+
 node index.js
 A API estará rodando no endereço: http://localhost:3000
 
@@ -94,8 +99,8 @@ Variáveis de ambiente (.env)
 Crie um arquivo .env com o conteúdo:
 
 env
-Copiar
-Editar
+
+
 JWT_SECRET=secreto123
 PORT=3000
 Você pode mudar o JWT_SECRET para qualquer string aleatória e segura.
